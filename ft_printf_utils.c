@@ -6,7 +6,7 @@
 /*   By: vaktas<vaktas@student.42istanbul.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 17:12:42 by vaktas            #+#    #+#             */
-/*   Updated: 2026/02/04 14:27:59 by vaktas           ###   ########.tr       */
+/*   Updated: 2026/02/05 13:32:56 by vaktas           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,7 @@ int	ft_puthex(unsigned long n, char *base)
 	if (!base)
 		return (0);
 	if (n >= 16)
-	{
 		count += ft_puthex(n / 16, base);
-	}
 	count += ft_putchar(base[n % 16]);
 	return (count);
 }
