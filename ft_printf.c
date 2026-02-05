@@ -6,7 +6,7 @@
 /*   By: vaktas<vaktas@student.42istanbul.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 18:00:36 by vaktas            #+#    #+#             */
-/*   Updated: 2026/02/04 16:26:39 by vaktas           ###   ########.tr       */
+/*   Updated: 2026/02/05 14:51:14 by vaktas           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,12 @@ int	ft_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			summation += ft_check_format(args, *format);
+			if (!*format)
+			{
+				va_end(args);
+				return (-1);
+			}
+			summation += ft_format(args, *format);
 		}
 		else
 			summation += ft_putchar(*format);

@@ -6,13 +6,13 @@
 /*   By: vaktas<vaktas@student.42istanbul.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 17:12:42 by vaktas            #+#    #+#             */
-/*   Updated: 2026/02/04 12:45:02 by vaktas           ###   ########.tr       */
+/*   Updated: 2026/02/05 14:49:53 by vaktas           ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_check_format(va_list args, char format)
+int	ft_format(va_list args, char format)
 {
 	int	count;
 

@@ -72,7 +72,7 @@ Artificial Intelligence (specifically Gemini) was utilized in this project for t
 
 
 
-Bu proje, 42 müfredatının bir parçası olarak vaktas tarafından oluşturulmuştur.
+*Bu proje, 42 müfredatının bir parçası olarak vaktas tarafından oluşturulmuştur.*
 
 ft_printf - @42Istanbul
 
